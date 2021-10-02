@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Tô Ferrado</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="manifest"
+      href="./manifest.webmanifest"
+      crossorigin="use-credentials"
+    />
+    <link rel="icon" type="image/png" href="./assets/appicons/favicon.ico" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Tô Ferrado" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/appicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/appicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/appicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/appicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/appicons/apple-icon-180x180.png"
+    />
+    <link rel="stylesheet" href="./tesi.css" />
+    <link rel="stylesheet" href="./toferrado.css" />
+    <script src="./tesi.js"></script>
+    <script src="./toferrado.js"></script>
+  </head>
+  <body>
+    <header class="headerBar dark">
+      <div class="appName">Tô Ferrado</div>
+      <div class="badge warning"><span id="estado">0</span></div>
+    </header>
+
+    <div id="tela1" class="component">
+      <div class="componentHeader">
+        <h1 class="componentTitle">Minhas tarefas</h1>
+        <button id="btnAdic" class="button primary">
+          <img src="./assets/plus1.png" />
+        </button>
+      </div>
+      <div class="componentContent">
+        <div id="blank">
+          <img src="./assets/hangloose.png" />
+          <p>Nada a fazer agora.</p>
+        </div>
+        <ul id="listaDeTarefas" class="list hidden"></ul>
+      </div>
+    </div>
+
+    <div id="tela2" class="component hidden">
+      <div class="componentHeader">
+        <h1 class="componentTitle">Nova tarefa</h1>
+      </div>
+      <div class="componentContent">
+        <div class="field">
+          <label for="inputNovaTarefa">Tarefa:</label>
+          <input id="inputNovaTarefa" type="text" autocomplete="off" />
+        </div>
+        <div class="buttonGroup mt1 end">
+          <button id="btnCanc1" class="button quarter light">Cancelar</button>
+          <button id="btnInc" class="button quarter primary" disabled>
+            Incluir
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="tela3" class="component hidden">
+      <div class="componentHeader">
+        <h1 class="componentTitle">Alteração de tarefa</h1>
+      </div>
+      <div class="componentContent">
+        <div class="field">
+          <label for="inputAlteraTarefa">Tarefa:</label>
+          <input id="inputAlteraTarefa" type="text" autocomplete="off" />
+        </div>
+        <div class="buttonGroup end mt1">
+          <button id="btnCanc2" class="button quarter light">Cancelar</button>
+          <button id="btnAlt" class="button quarter primary">Alterar</button>
+        </div>
+        <div class="buttonGroup end mt3">
+          <button id="btnDel" class="button quarter danger">
+            Apagar tarefa
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
