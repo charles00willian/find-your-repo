@@ -1,12 +1,12 @@
 {
-  "name": "Tô Ferrado - Gestão de Tarefas",
-  "short_name": "Tô Ferrado",
+  "name": "Find Your Repo - Encontre repositórios",
+  "short_name": "Find Your Repo",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#3b78ac",
   "background_color": "white",
   "orientation": "portrait",
-  "description": "Aplicação web simples e objetiva para gestão de tarefas",
+  "description": "Ache um repositório com seu perfil!",
   "icons": [
     {
       "src": "./assets/appicons/android-icon-48x48.png",

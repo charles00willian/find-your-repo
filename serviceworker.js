@@ -1,4 +1,4 @@
-var cacheName = 'toferrado-v1.0';
+var cacheName = 'findyourrepo';
 
 self.addEventListener('install', function (event) {
   caches.open(cacheName).then((cache) => {
@@ -6,7 +6,8 @@ self.addEventListener('install', function (event) {
       '/',
       '/index.html',
       '/manifest.webmanifest',
-      '/tesi.css',
+      '/main.css',
+      '/nomalize.css',
       '/tesi.js',
       '/toferrado.css',
       '/toferrado.js',
