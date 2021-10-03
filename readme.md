@@ -12,7 +12,7 @@ Nesta tela, o usuário pode buscar e selecionar as tecnologias que conhece para 
 
 ### Tela de listagem de repositório
 
-Nesta outra tela, o usuário pode visualizar os repositórios que se encaixam suas habilidades e posteriormente buscá-los para contribuid
+Nesta outra tela, o usuário pode visualizar os repositórios que se encaixam suas habilidades e posteriormente buscá-los para contribuir
 
 ...
 
