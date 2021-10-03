@@ -21,17 +21,16 @@
 
   <link rel="stylesheet" href="./normalize.css" />
   <link rel="stylesheet" href="./main.css" />
-  <script src="./tesi.js"></script>
-  <script src="./toferrado.js"></script>
+
 </head>
 
 <body>
   <main>
-    <div class="main-container main-container__high">
+    <form id="find-repo-form" class="main-container main-container__high">
       <h1 class="h1">
         Find your repo
       </h1>
-      <div class="results-list">
+      <!-- <div class="results-list">
         <div class="repo-wrapper">
           <img src="https://i.pravatar.cc/300" alt="avatar" class="repo-owner-image">
           <div class="repo-name-wrapper">
@@ -56,36 +55,24 @@
           </div>
           <img src="./assets/remover.png" alt="adicionar" class="repo-action">
         </div>
-      </div>
-      <!-- <input class="search-box" placeholder="Tecnologias que você domina" />
-        <div class="results-list">
-          <span class="checkbox-wrapper">
-            <input type="checkbox" id="scales" name="scales">
-            <label for="scales" class="checkbox-label">React</label>
-          </span>
-
-          <span class="checkbox-wrapper">
-            <input type="checkbox" id="scales" name="scales">
-            <label for="scales" class="checkbox-label">React</label>
-          </span>
-
-          <span class="checkbox-wrapper">
-            <input type="checkbox" id="scales" name="scales">
-            <label for="scales" class="checkbox-label">React</label>
-          </span>
-          <span class="checkbox-wrapper">
-            <input type="checkbox" id="scales" name="scales">
-            <label for="scales" class="checkbox-label">React</label>
-          </span>
+      </div> -->
+        <input id="find-repo-search" class="search-box" placeholder="Tecnologias que você domina" type="text" value=""/>
+        <div class="results-list" id="technologies">
         </div>
 
-        <button class="button">
+        <button class="button" type="submit" >
           Buscar repositórios
-        </button> -->
-    </div>
+        </button>
+    </form>
   </main>
 </body>
 
+<script src="./tesi.js"></script>
+<script src="./index.js"></script>
+<script>
+  document.getElementById("find-repo-search").oninput = handleInputChange;
+  
+</script>
 <!-- <body>
     <header class="headerBar dark">
       <div class="appName">Find Your Repo</div>

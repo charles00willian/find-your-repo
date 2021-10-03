@@ -73,6 +73,8 @@ main {
 
 .results-list {
   margin: 16px 0;
+  flex: 1;
+  overflow: scroll;
 }
 
 .repo-wrapper {
