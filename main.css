@@ -14,7 +14,10 @@ main {
   justify-content: flex-end;
   width: 100%;
   min-height: 100vh;
-  border-radius: ;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .main-container {

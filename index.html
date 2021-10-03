@@ -25,53 +25,39 @@
 </head>
 
 <body>
-  <main>
+  <main id="main">
     <form id="find-repo-form" class="main-container main-container__high">
       <h1 class="h1">
         Find your repo
       </h1>
-      <!-- <div class="results-list">
-        <div class="repo-wrapper">
-          <img src="https://i.pravatar.cc/300" alt="avatar" class="repo-owner-image">
-          <div class="repo-name-wrapper">
-            <span class="repo-name">
-              Repositorio X
-            </span>
-            <span class="repo-technologies">
-              React, JavaScript, Node
-            </span>
-          </div>
-          <img src="./assets/adicionar.png" alt="adicionar" class="repo-action">
-        </div>
-        <div class="repo-wrapper">
-          <img src="https://i.pravatar.cc/300" alt="avatar" class="repo-owner-image"  >
-          <div class="repo-name-wrapper">
-            <span class="repo-name">
-              Repositorio Y
-            </span>
-            <span class="repo-technologies">
-              React, JavaScript, Node
-            </span>
-          </div>
-          <img src="./assets/remover.png" alt="adicionar" class="repo-action">
-        </div>
-      </div> -->
-        <input id="find-repo-search" class="search-box" placeholder="Tecnologias que você domina" type="text" value=""/>
-        <div class="results-list" id="technologies">
-        </div>
+      <input id="find-repo-search" class="search-box" placeholder="Tecnologias que você domina" type="text" value=""/>
+      <div class="results-list" id="technologies">
+      </div>
 
-        <button class="button" type="submit" >
-          Buscar repositórios
-        </button>
+      <button class="button" type="submit" >
+        Buscar repositórios
+      </button>
     </form>
+    
+    <div id="repo-list-screen" class="main-container main-container__high hidden" >
+      <h1 class="h1">
+        Repositórios encontrados
+      </h1>
+      <div id="repo-list" class="results-list">
+      </div> 
+      <button id="go-back" class="button" type="button" >
+        Voltar
+      </button>
+    </div>
   </main>
 </body>
 
-<script src="./tesi.js"></script>
 <script src="./index.js"></script>
 <script>
   document.getElementById("find-repo-search").oninput = handleInputChange;
-  
+  document.getElementById("go-back").onclick = () => {
+    showScreen('find-repo-form')
+  }
 </script>
 <!-- <body>
     <header class="headerBar dark">
